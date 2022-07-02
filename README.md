@@ -15,25 +15,23 @@ The dataset files are organised into a train folder for training data and a test
 ### 3.2. Model Pipeline
 The U-Net model architecture was used for this project. For further information, please do refer the TensorFlow documentation.The structure of the model is represented in the image below.
 
-![pipeline project 4](https://user-images.githubusercontent.com/76200485/167092588-06940be6-75c5-4018-8af2-8834c5396079.png)
+![Model](https://user-images.githubusercontent.com/108482217/176983701-2c7c9419-f0bb-4ecc-ab76-84561d62f1bd.png)
 
 The model is trained with a batch size of 16 and 100 epochs. Early stopping is also applied in the model training. 
 
-![result gtgt](https://user-images.githubusercontent.com/76200485/167093419-40fe4790-222a-4aa3-8f73-07521211e8f4.jpg)
+![test result](https://user-images.githubusercontent.com/108482217/176983715-5bd67d2f-02a1-4128-871f-eb2c0ccf37c8.jpg)
 
 The training stops at epoch 22, with a training accuracy of 97% and validation accuracy of 96%. 
 
 ## 4. Results
 The model is evaluated with test data, which is shown in figure below.
 
-![result projecrt 4](https://user-images.githubusercontent.com/76200485/167093536-3f6f93d7-66aa-44ef-82b1-2b606a7bc327.jpg)
-
+![evaluation result](https://user-images.githubusercontent.com/108482217/176983727-26a726d5-e921-4ab0-af4d-1dfe7f368c4b.jpg)
 
 Some predictions are also made with the model using some of the test data. The actual output masks and prediction masks are shown in figures below.
 
-![Figure 1](https://user-images.githubusercontent.com/76200485/167093714-19c8d618-c6f2-4bca-9660-4f7d94def5c6.png)
-![Figure 2](https://user-images.githubusercontent.com/76200485/167093734-9dbf84f6-8750-4d58-a7f9-63012ca0e399.png)
-![Figure 3](https://user-images.githubusercontent.com/76200485/167093759-984bea31-87bd-46e3-8322-45d21d78814e.png)
-
+![result 1](https://user-images.githubusercontent.com/108482217/176983737-ae87a320-9d38-472d-b874-e4fa8351513e.png)
+![result 2](https://user-images.githubusercontent.com/108482217/176983739-43e05a78-e885-433c-a3cf-2995632ba0ed.png)
+![result 3](https://user-images.githubusercontent.com/108482217/176983740-b5b02e08-a284-4105-acb2-89c08bff31ea.png)
 
 Overall, the model is capable of segmenting the cell neuclei with high accuracy.
