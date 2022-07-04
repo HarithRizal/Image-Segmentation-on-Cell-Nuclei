@@ -17,7 +17,7 @@ The U-Net model architecture was used for this project. For further information,
 
 ![Model](https://user-images.githubusercontent.com/108482217/176983701-2c7c9419-f0bb-4ecc-ab76-84561d62f1bd.png)
 
-The model is trained with a batch size of 16 and 100 epochs. Early stopping is also applied in the model training. 
+The model is trained with a batch size of 128 and 200 epochs. Early stopping is also applied in the model training. 
 
 ![test result](https://user-images.githubusercontent.com/108482217/176983715-5bd67d2f-02a1-4128-871f-eb2c0ccf37c8.jpg)
 
