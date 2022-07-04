@@ -13,8 +13,8 @@ import numpy as np
 
 #1. Load the dataset
 #1.1 Prepare file directory
-train_file_dir = r"C:\Users\asus\Documents\tensorflow\GitHub\Project-4-Image-Segmentation-on-Cell-Nuclei\data-science-bowl-2018\train"
-test_file_dir = r"C:\Users\asus\Documents\tensorflow\GitHub\Project-4-Image-Segmentation-on-Cell-Nuclei\data-science-bowl-2018\test"
+train_file_dir = r"C:\Users\asus\Documents\tensorflow\GitHub\Image-Segmentation-on-Cell-Nuclei\data-science-bowl-2018\train"
+test_file_dir = r"C:\Users\asus\Documents\tensorflow\GitHub\Image-Segmentation-on-Cell-Nuclei\data-science-bowl-2018\test"
 
 #%%
 #1.2 Load the images list
@@ -237,7 +237,7 @@ class DisplayCallback(tf.keras.callbacks.Callback):
         print('\nSample Prediction after epoch {}\n'.format(epoch+1))
 
 #Tensorboard and EarlyStopping callbacks
-base_log_path = r"C:\Users\asus\Documents\tensorflow\GitHub\Project-4-Image-Segmentation-on-Cell-Nuclei\tb_logs"
+base_log_path = r"C:\Users\asus\Documents\tensorflow\GitHub\Image-Segmentation-on-Cell-Nuclei\tb_logs"
 log_dir = os.path.join(base_log_path, datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + '__Project_4')
 tb = tf.keras.callbacks.TensorBoard(log_dir,histogram_freq=1,profile_batch=0)
 es = tf.keras.callbacks.EarlyStopping(monitor='val_loss',patience=10,verbose=0)
