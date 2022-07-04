@@ -1,6 +1,6 @@
 # Image-Segmentaion-on-Cell-Nuclei
 
-## 1. Summary
+## 1. Summary.
 The project's goal is to successfully recognise cell nuclei from biomedical images. Because cell nuclei vary in shape and size, semantic segmentation is the most effective method for detecting them. For this purpose, a deep learning model is developed and deployed. The model has been trained using the well-known dataset from [2018 Data Science Bowl dataset](https://www.kaggle.com/c/data-science-bowl-2018).
 
 ## 2. IDE and Framerowk
